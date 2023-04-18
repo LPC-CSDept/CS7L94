@@ -1,4 +1,4 @@
-def deleteDict(org_dict, keys):
+def changeKey(org_dict, org_key, new_key):
     ##################################################
     # Code your program here
     ##################################################
@@ -21,8 +21,9 @@ def main():
         "city": "New york"}
 
     printDict(emp_dict)
-    keys = ['name', 'salary']
-    deleteDict(emp_dict, keys)
+    org_keyval = 'city'
+    new_keyval = 'location'
+    changeKey(emp_dict, org_keyval, new_keyval)
     printDict(emp_dict)
 
 
